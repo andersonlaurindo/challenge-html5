@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact - ABC Barbershop</title>
+        <base href="">
+        <link rel="stylesheet" href="css/reset.css">
+    </head>
+
+    <body>
+        <noscript>Your browser does not support JavaScript.</noscript>
+        <header>
+            <div>
+                <h1><img src="img/logo.png" alt="ABC Barbershop Logo"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <table>
+                <caption>Opening hours</caption>
+                <colgroup>
+                    <col style="background-color:#F0F0F0">
+                    <col style="background-color:#DCDCDC">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Weekday</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><u>Monday</u></td>
+                        <td><time>8am</time> to 20pm</time></td>
+                    </tr>
+                    <tr>
+                        <td><u>Wednesday</u></td>
+                        <td><time>8am</time> to <time>20pm</time></td>
+                    </tr>
+                    <tr>
+                        <td><u>Friday</u></td>
+                        <td><time>8am</time> to <time>22pm</time></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>3 days</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <hr>
+
+            <form> 
+                <fieldset>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="email@address.com" required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" placeholder = "+XX (XXX) XXX-XXXX" required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="message">Message</label>
+                    <textarea cols="70" rows=10 id="message"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>How do you prefer our contact?</legend>
+                    <label for="radio-email">
+                        <input type="radio" name="contact" value="email" id="radio-email">E-mail
+                    </label>
+                    
+
+                    <label for="radio-phone">
+                        <input type="radio" name="contact" value="phone" id="radio-phone">Phone
+                    </label>
+                    
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contact" value="whatsapp" id="radio-whatsapp" checked>WhatsApp
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="barber">You can choose a barber:</label>
+                    <input list="barbers" name="barber" id="barber">
+                    <datalist id="barbers">
+                        <option value="Alex">
+                        <option value="Tony">
+                        <option value="Jackson">
+                        <option value="James">
+                        <option value="Noah">
+                    </datalist>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Which time of the day you prefer?</legend>
+                    <select>
+                        <optgroup label="Parts of the day">
+                            <option>Morning</option>
+                            <option>Afternoon</option>
+                            <option>Evening</option>
+                        </optgroup>
+                        <optgroup label="Time interval">
+                            <option>After 12pm</option>
+                            <option>Before 6pm</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <label>
+                        <input type="checkbox" checked>Would you like to receive our latest new by email?
+                    </label>
+                </fieldset>
+
+                <input type="submit" value="Send">
+                <button type="reset" value="Reset"><img src="img/reset.png" alt="Reset"></button>
+            </form>
+        </main>
+
+        <div>
+            <map name="map_social_media">
+                <area href="https://facebook.com" alt="Facebook" target="_blank" shape=poly coords="30,100, 140,50, 290,220, 180,280">
+                <area href="https://instragram.com" target="_blank" alt="Instagram" shape=poly coords="190,75, 200,60, 495,60, 495,165, 275,165">
+            </map>
+            <img src="img/social_media.jpg" alt="image map social media" width=500 height=332 usemap="#map_social_media">
+        </div>
+
+        <footer>
+            <p><small>&copy; Copright ABC Barbershop - 2019</small></p>
+        </footer>
+    </body>
+</html>

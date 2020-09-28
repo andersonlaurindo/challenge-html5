@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Products - ABC Barbershop</title>
+        <base href="">
+        <link rel="stylesheet" href="css/reset.css">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <h1><img src="img/logo.png" alt="ABC Barbershop Logo"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <dl>
+                    <dt>Hair</dt>
+                    <dd>Most popular men's haircuts and men's hairstyles.</dd>
+                    <dt>Beard</dt>
+                    <dd>List of the best beard styles.</dd>
+                    <dt>Hair + Beard</dt>
+                    <dd>Full service.</dd>
+                </dl>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Frequently asked questions</h2>
+                <details>
+                    <summary>Should i arrive early to my appointment?<summary>
+                    <p>Please arrive 5 minutes prior to your appointment. Late arrivals of more than 10 minutes may be asked to reschedule.</p>
+                </details>
+                <details>
+                    <summary>What is your cancellation policy?<summary>
+                    <p>Please call to cancel your appointment at least 4 hours in advance.</p>
+                </details>
+            </section>
+
+            <hr>
+
+            <section>
+                <form oninput="discount.value = (oneservice.valueAsNumber + (fullservice.valueAsNumber * 2))">
+                    <legend><span style="color:blue">Blue savings</span>: Buy more and save discounts</legend>
+
+                    <p>Type values and press <kbd>TAB</kbd></p>
+
+                    <p><label for="oneservice">Haircut or Beardcut</label>
+                    <input type="number" min="0" max="10" id="oneservice" name="oneservice" value="1"></p>
+
+                    <p><label for="fullservice">Full service</label>
+                    <input type="number" min="0" max="10" id="fullservice" name="fullservice" value="1"></p>
+
+                    <p>Total discount (%): <strong><output name="discount" for="oneservice fullservice">2</output></strong></p>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p><small>&copy; Copright ABC Barbershop - 2019</small></p>
+        </footer>
+    </body>
+</html>

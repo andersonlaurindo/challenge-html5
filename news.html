@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Products - ABC Barbershop</title>
+        <base href="">
+        <link rel="stylesheet" href="css/reset.css">
+        <script>
+            function showSurvey() {
+              var temp = document.getElementsByTagName("template")[0];
+              var clon = temp.content.cloneNode(true);
+              document.body.appendChild(clon);
+            }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <h1><img src="img/logo.png" alt="ABC Barbershop Logo"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <h2>Covid-19 Workplace Hygiene Programme</h2>
+                <p><dfn>COVID-19</dfn> is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many countries globally.</p>
+                <p>The essence of the programme, launching with <b>Siteclean</b> and folllowing <abbr title="World Health Organization">WHO</abbr> standards, is to identify all areas of a building where the risk of contamination to building users is high, highlight them and then clean them at a frequency that is appropriate to the area they are in. This includes common areas, door handles, lifts and stairway railings.</p>
+                <figure>
+                    <img src="img/safety-sign.png" alt="Covid-19 safety-sign">
+                    <figcaption>Safety sign implemented on the locations.</figcaption>
+                </figure>
+                <p>Here is a quote from WHO's website:</p>
+                <blockquote cite="https://covid19.who.int/">
+                    Globally, as of 1:08pm CEST, 27 September 2020, there have been 32,730,945 confirmed cases of COVID-19, including 991,224 deaths, reported to WHO.
+                </blockquote>
+                <address>Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.</address>
+                <h3>Other tips:</h3>
+                <object data="files/barbertips.pdf" type="application/pdf">
+                    <param name="view" value="fitH"/>
+                    <embed src="files/barbertips.pdf" type="application/pdf" />
+                </object>
+                <aside>
+                    <h3>Siteclean Center</h3>
+                    <p><i>Siteclean</i> is a independent benchmarking service for the facilities management industry.</p>
+                    <picture>
+                        <source media="(min-width:650px)" srcset="img/siteclean_big.jpg">
+                        <img src="img/siteclean_small.jpg" alt="Siteclean logo">
+                      </picture>
+                </aside>
+            </article>
+
+            <hr>
+
+            <article>
+                <h2>Clients rankings</h2>
+                <p>Biggest clients of the year</p>
+                <ul>
+                    <li>Client <data value="12"></data><bdi>Paul</bdi>: 26 services</li>
+                    <meter value="26" min="0" max="26"></meter><br>
+                    <li>Client <data value="43"></data><bdi>Justin</bdi>: 22 services</li>
+                    <meter value="22" min="0" max="26"></meter><br>
+                    <li>Client <data value="9"></data><bdi>إيان</bdi>: 18 services</li>
+                    <meter value="18" min="0" max="26"></meter><br>
+                </ul>
+                <p>Record in a year: <s>22</s> 26 services</p>
+            </article>
+
+            <hr>
+
+            <article>
+                <h2><bdo dir="rtl">Inverse day</bdo></h2>
+                <p>Yesterday, some employees were <del>requested</del> <ins>treated</ins> at the barbershop by other co-workers.</p>
+                <p>It was a differente day for barbers, with many activities:</p>
+                <p>Challenge one: learning of software programming printing the result of <var>a</var> + <var>b</var>. In other words, typing 1 for <var>a</var> and 2 for <var>b</var>, the result would be: <samp>The sum result is 3.</samp></p>
+                <p>The winner made this code using Python Language Programming: <code>print("Result is:", a + b)</code></p>
+                <p>The second Challenge was making a video and a audio, the result is bellow.</p>
+                <video width="200" height="200" controls>
+                    <source src="video/video_test.m4v" type="video/mp4">
+                    <track src="video/video_test.vtt" kind="subtitles" srclang="en" label="English">
+                </video>
+                <audio controls>
+                    <source src="audio/audio_test.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>The third challenge was: drawing 2 pictures.</p>
+                <canvas id="myCanvas">
+                    Your browser does not support the canvas tag.
+                </canvas>
+                <script>
+                    myCanvas();
+
+                    function myCanvas() {
+                        var canvasElem = document.getElementById('myCanvas');
+                        var context = canvasElem.getContext('2d');
+        
+                        context.fillStyle = "rgb(200, 0, 0)";
+                        context.fillRect(0, 0, 150, 100);
+        
+                        context.fillStyle = "rgba(0, 0, 200, 0.5)";
+                        context.fillRect (120, 70, 70, 70);
+                    }
+                </script>
+                <svg width="300" height="200">
+                    <polygon points="100,10 40,198 190,78 10,78 160,198"
+                    style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+                <p>Challenge four: making a quotation, click for show the winner quotation.</p>
+                <div>  
+                    <dialog id="quotationWinner" style="width:50%;background-color:#F4FFEF;border:1px dotted black;">  
+                    <p><q>I am so clever that sometimes I don't understand a single word of what I am saying.   
+                    </q> - <cite>Oscar Wilde</cite></p>  
+                    <button id="hide">Close</button>  
+                    </dialog>  
+                    <button id="show">Show Quotation.</button>  
+                </div>  
+                      
+                <script type="text/JavaScript">  
+                    (function() {    
+                        var dialog = document.getElementById('quotationWinner');    
+                        document.getElementById('show').onclick = function() {    
+                            dialog.show();    
+                        };    
+                        document.getElementById('hide').onclick = function() {    
+                            dialog.close();    
+                        };    
+                    })();
+                </script>
+                <p>Other activity: which the longest word? A barber answered: Lopadotemachoselachogaleokranioleipsanodrimhypotr<wbr>immatosilphioparaomelitokatakechymenokichlepikoss<wbr>yphophattoperisteralektryonoptekephalliokigklopeleio<wbr>lagoiosiraiobaphetraganopterygon.</p>
+                <p>The champions won a T-shirt with letters in the Japanese language: <ruby>漢 <rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt></ruby></p>
+                <p>Congratulations from
+                <pre>
+                    ABC
+                       A
+                       R
+                       B
+                       E
+                       R
+                </pre>
+            </article>
+
+            <hr>
+
+            <article>
+                <h2>2020 Customer Satisfaction Survey</h2>
+                <p>Our results 2019: <sub>88%</sub></p>
+                <progress value="88" max="100"></progress>
+                <button onclick="showSurvey()">Show survey</button>
+                <template>
+                    <p>Our results 2020: <sup>92%</sup></p>
+                    <progress value="92" max="100"></progress>
+                </template>
+            </article>
+        </main>
+
+        <footer>
+            <p><small>&copy; Copright ABC Barbershop - 2019</small></p>
+        </footer>
+    </body>
+</html>
